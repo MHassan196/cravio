@@ -1,0 +1,83 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/banner_img.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+}
+
+.header-content{
+    position: absolute;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5vw;
+    max-width: 60%;
+    bottom: 15%;
+    left: 6vw;
+    animation: fadeIn 2s;
+}
+
+.header-content h2{
+    font-weight: 500;
+    color: rgb(72, 83, 18);
+    font-size: max(4.5vw, 22px);
+    text-transform: capitalize;
+}
+
+.header-content p{
+    color: rgb(55, 61, 25);
+    font-size: 1.2vw;
+}
+
+.header-content a{
+    border: none;
+    color: rgb(55, 61, 25);
+    font-weight: 600;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 1050px){
+    .header{
+        height: 38vw;
+    }
+
+    .header-content{
+        max-width: 65%;
+        bottom: 20%;
+    }
+}
+@media (max-width: 750px){
+    .header-content{
+        max-width: 65%;
+        bottom: 25%;
+    }
+    .header-content h2{
+        margin-bottom: 10px;
+    }
+    /* .header-content h2{
+        font-size: 20px;
+    } */
+    .header-content p{
+        display: none;
+    }
+    .header-content a{
+        padding: 2vw 3vw;
+        font-size: 11px;
+    }
+}
+@media (max-width: 380px){
+    
+    .header-content h2{
+        font-size: 18px;
+    }
+    .header-content a{
+        padding: 1.5vw 2.5vw;
+        font-size: 10px;
+    }
+}
